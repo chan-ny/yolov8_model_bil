@@ -1,9 +1,3 @@
-# Build the package
-
-cd Detection_Bill
- 1. python setup.py sdist bdist_wheel
- 2. pip install dist/image_processor-0.1.0-py3-none-any.whl
- 3. uvicorn app.main:app --reload
 
 # Docker
 
