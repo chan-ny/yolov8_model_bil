@@ -1,9 +1,12 @@
 1. Build the package
 
 cd Detection_Bill
-python setup.py sdist bdist_wheel
+ python setup.py sdist bdist_wheel
 
 2.  Install locally (for testing)
  pip install dist/image_processor-0.1.0-py3-none-any.whl
 
+# Docker
 
+1. docker build --platform linux/amd64 -t yolo-ocr-api .
+2. docker run --platform linux/amd64 -p 8000:8000 --env-file .env yolo-ocr-api
